@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Private Message Board </title>
+<link rel="stylesheet" type="text/css" href="external_style.css">
+
+<script type="text/javascript" src="external.js"></script>  
+</head>
+<body style="background-color:#ededed;">
+
+
+<nav class="navigator">
+<div>
+<ul>
+  		<li><a class="active" href="msg_list.html">Home</a></li>
+  		<li><a class="active" href="#moments">Moments</a></li>
+ 		<li><a class="active" href="#notifications">Notifications</a></li>
+ 		<li><a class="active" href="#messages">Messages</a></li>
+ 		<li><a class="active" href="msg_creation.html">Make Post</a></li>
+ 		<li><input type="text" name="keyname"></li>
+ 		<li ><a class="active" href=#>Search</a></li>
+ 		<li style="float:right;"><a class="active" href="main.html">Log out</a></li>
+	</ul>
+
+</div>
+</nav>
+
+
+<div class="container">
+
+<br/>
+<section id="profile">
+<h2>Jinkai</h2>
+<hr>
+<p><img src="user.jpg" alt="user" style="width:100px; height:100px;"></p>
+<hr>
+<p>More info</p>
+</section>
+
+<section id="post">
+<h3>Create post</h3>
+<article>
+<p>What's on your mind?</p>
+<a href="msg_creation.html"><button>Share</button></a>
+<br/>
+</article>
+</section>
+<br/>
+
+<section id="reminder" class="content">
+<h4>See the latest posts below</h4>
+</section>
+
+<br/>
+
+<section id="u0" class="content">
+<p><img src="avatar_1.png" alt="user" style="width:50px; height:50px;"> User_1</p>
+<p>2019/07/13</p>
+<input type="hidden" value="id">
+<form id="user_1" name="myCode_1" method="post" onsubmit="return code1()">
+<table>
+<tr>
+<th><input type="password" name="code_1" placeholder="access code"></th>
+<th><button type="submit">submit</button></th>
+</tr>
+<tr>
+<th><label id="code_msg" class="err_msg"></label></th>
+</tr>
+</table>
+</form>
+<article>
+<p><a href="msg_display.html">
+How's going?</a>
+</p>
+</article>
+</section>
+<br/>
+
+<section id="u1" class="content">
+<p><img src="avatar_2.jpg" alt="user" style="width:50px; height:50px;"> User_2</p>
+<p>2019/07/13</p>
+<input type="hidden" value="id">
+<form id="user_2" name="myCode_2" method="post" onsubmit="return code2()">
+<table>
+<tr>
+<th><input type="password" name="code_2" placeholder="access code"></th>
+<th><button type="submit">submit</button></th>
+</tr>
+<tr>
+<th><label id="code_msg_2" class="err_msg"></label></th>
+</tr>
+</table>
+</form>
+<article>
+<p><a href="msg_display.html">
+Hello there.</a>
+</p>
+</article>
+
+</section>
+<br/>
+
+<section id="u2" class="content">
+<p><img src="avatar_3.jpg" alt="user" style="width:50px; height:50px;"> User_3</p>
+<p>2019/07/13</p>
+<input type="hidden" value="id">
+<form id="user_3" name="myCode_3" method="post" onsubmit="return code3()">
+<table>
+<tr>
+<th><input type="password" name="code_3" placeholder="access code"></th>
+<th><button type="submit">submit</button></th>
+</tr>
+<tr>
+<th><label id="code_msg_3" class="err_msg"></label></th>
+</tr>
+</table>
+</form>
+<article>
+<p><a href="msg_display.html">
+This is the user_3.</a>
+</p>
+</article>
+</section>
+<br/>
+
+
+</div>
+
+  
+  <div class="footer">
+		<ul>
+			<li class="footer_head">About</li>
+			<li class="footer_head">Help</li>
+			<li class="footer_head">Blog</li>
+			<li class="footer_head">Privacy</li>
+			<li class="footer_head"><a style="text-decoration:none;color:white;" href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fwww2.cs.uregina.ca%2F~fan270%2Fas2%2Flogin_page.html">Validate HTML5</a></li>
+		</ul>
+</div>
+<script type = "text/javascript"  src = "code-r.js" ></script>
+</body>
+</html>

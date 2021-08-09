@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type= "text/css" href="external_style.css">
+<script type="text/javascript" src="external.js"></script>  
+<meta charset="UTF-8">
+<title>Create Post</title>
+</head>
+<body style="background-color:#ededed;">
+
+<nav class="navigator">
+<div>
+<ul>
+  		<li><a class="active" href="msg_list.html">Home</a></li>
+  		<li><a class="active" href="#moments">Moments</a></li>
+ 		<li><a class="active" href="#notifications">Notifications</a></li>
+ 		<li><a class="active" href="#messages">Messages</a></li>
+ 		<li><a class="active" href="msg_creation.html">Make Post</a></li>
+ 		<li><input type="text" name="keyname"></li>
+ 		<li ><a class="active" href=#>Search</a></li>
+ 		<li style="float:right;"><a class="active" href="main.html">Log out</a></li>
+	</ul>
+
+</div>
+</nav>
+
+<div class="container">
+
+<br/>
+
+<section id="post" style="text-align:center;">
+<h2>Create new post</h2>
+
+<form id="textForm" method="post">
+<table style="margin:auto;">
+	<tr><td><textarea onkeyup="size(this);" name="text" placeholder="What's happending?" ></textarea></td></tr>
+	<tr><td><label id="text_msg" class="err_msg"></label></td></tr>
+	<tr><td><small class="text_msg" >You can type maximum 1000 words. Remain：<span id="check_text" class="text_msg">1000</span></small></td></tr>
+</table>
+
+<hr>
+
+<table style="margin:auto;">
+<!-- 
+	<tr><td><input type="password" name="code_4" placeholder="6 digits access code"></td></tr>
+	<tr><td><label id="code_msg_4" class="err_msg"></label></td></tr>
+	<tr><td><input type="text" name="date" placeholder="expire date(dd/mm/yyyy)"></td></tr>
+	<tr><td><label id="date_msg" class="err_msg"></label></td></tr>
+	<tr><td><input type="text" name="time" placeholder="expire time(eg. 4:12pm)"></td></tr>
+	<tr><td><label id="time_msg" class="err_msg"></label></td></tr>
+-->
+<tr><td>Access code: </td><td> <input type="text" name="accessCode" size="30" /></td> </tr>
+ <tr><td></td><td><label id="code_msg4" class="err_msg"></label></td></tr>    
+<tr><td>Expire date: </td><td> <input type="text" name="expireDate" size="30" placeholder="(eg. dd/mm/yyyy)"/></td></tr>
+<tr><td></td><td><label id="date_msg" class="err_msg"></label></td></tr>      
+<tr><td>Expire time: </td><td> <input type="text" name="expireTime" size="30" placeholder="(eg. 4:12pm)"/></td></tr>
+<tr><td></td><td><label id="time_msg" class="err_msg"></label></td></tr>
+
+
+</table>
+	<br/><br/>
+	<input type="submit" value="Post"/>
+</form>
+	<p><a href="msg_list.html">Back to the main page.</a></p>
+</section>
+<br/>
+
+</div>
+  
+<script type="text/javascript" src="code-r.js"></script>  
+</body>
+</html>
